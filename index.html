@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIS Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header class="header">
+            <!-- Top Utility Bar -->
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <span class="institute-name">NITK Surathkal</span>
+                    <span class="about-link">About IRIS</span>
+                </div>
+                <div class="top-bar-right">
+                    <span class="terms-link">Terms of Service</span>
+                    <div class="top-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation Bar -->
+            <div class="main-nav">
+                <div class="nav-left">
+                    <div class="iris-logo">
+                        <span>IRIS</span>
+                    </div>
+                </div>
+
+                <div class="nav-center">
+                    <nav class="navigation-menu">
+                        <div class="nav-item">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L3 4L8 7L13 4L8 1Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M3 4V10L8 13L13 10V4" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Institute</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M3 4.5L6 7.5L9 4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="nav-item">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2L2 5L8 8L14 5L8 2Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M2 5V11L8 14L14 11V5" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Academics</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M3 4.5L6 7.5L9 4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="nav-item">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect x="2" y="6" width="12" height="8" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M6 6V4C6 2.9 6.9 2 8 2C9.1 2 10 2.9 10 4V6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Campus</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M3 4.5L6 7.5L9 4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="nav-item">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="6" stroke="white" stroke-width="1.5"/>
+                                <path d="M4 8L6 10L12 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Alumni</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M3 4.5L6 7.5L9 4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="nav-right">
+                    <div class="search-bar">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M13 13L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <input type="text" placeholder="Search for..." />
+                    </div>
+                    
+                    <div class="notifications">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 2C7.8 2 6 3.8 6 6V9L4 11V12H16V11L14 9V6C14 3.8 12.2 2 10 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M8 12V13C8 14.1 8.9 15 10 15C11.1 15 12 14.1 12 13V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="notification-dot"></div>
+                    </div>
+
+                    <div class="shield-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 1L3 4V10C3 15.5 6.5 20 10 20C13.5 20 17 15.5 17 10V4L10 1Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M7 10L9 12L13 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <div class="profile-section">
+                        <img src="https://via.placeholder.com/32x32/FFFFFF" alt="Profile" class="profile-image">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sidebar Toggle Button -->
+        <button class="sidebar-toggle" id="sidebarToggle">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <button class="sidebar-close" id="sidebarClose">×</button>
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul class="links-list">
+                    <li><a href="#">NITK Website</a></li>
+                    <li><a href="#">My Grades</a></li>
+                    <li><a href="#">View Timetable</a></li>
+                    <li><a href="#">Faculty Contacts</a></li>
+                    <li><a href="#">Fees</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Login to Moodle</a></li>
+                    <li><a href="#">About IRIS</a></li>
+                </ul>
+            </div>
+
+            <div class="support-section">
+                <h3>Support</h3>
+                <p>officers@iris.nitk.ac.in</p>
+            </div>
+
+            <div class="module-designers">
+                <h3>Module Designers</h3>
+                <ul>
+                    <li>Akshay Revankar</li>
+                    <li>Govind Jeevan</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- CGPA Section -->
+            <div class="cgpa-section">
+                <div class="cgpa-card">
+                    <div class="cgpa-icon">
+                        <img src="Google_Scholar_logo.svg.png" alt="CGPA Icon">
+                    </div>
+                    <div class="cgpa-info">
+                        <div class="cgpa-value">8.56</div>
+                        <div class="cgpa-label">Major CGPA</div>
+                    </div>
+                </div>
+
+                <div class="credits-card">
+                    <div class="credits-info">
+                        <div class="credits-value">75</div>
+                        <div class="credits-label">Credits Earned</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attendance Section -->
+            <div class="attendance-section">
+                <h2>Attendance</h2>
+                <div class="attendance-content">
+                    <div class="attendance-chart">
+                        <div class="chart-background"></div>
+                        <div class="subject-dots">
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="percentage-circle">
+                            <div class="circle-progress">
+                                <div class="circle-fill"></div>
+                            </div>
+                            <div class="percentage-text">85%</div>
+                        </div>
+                    </div>
+                    <div class="course-chips">
+                        <div class="course-chip small">CS201</div>
+                        <div class="course-chip">Design Of Digital Systems</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Deadlines -->
+            <div class="deadlines-section">
+                <h2>Upcoming Deadlines</h2>
+                <div class="deadline-item">
+                    <div class="deadline-content">
+                        <h3>Software Engineering</h3>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                    <span class="overdue">Overdue</span>
+                </div>
+            </div>
+
+            <!-- Announcements -->
+            <div class="announcements-section">
+                <h2>Announcements</h2>
+                <div class="announcement-list">
+                    <div class="announcement-item">
+                        <h4>Attention: Mega Mess Members</h4>
+                    </div>
+                    <div class="announcement-item">
+                        <h4>Safe, Secure and Serene Campus</h4>
+                    </div>
+                    <div class="announcement-item">
+                        <h4>New Features on IRIS</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frequently Used -->
+            <div class="frequently-used-section">
+                <h2>Frequently Used</h2>
+                <div class="quick-access-grid">
+                    <div class="quick-access-item">
+                        <span>Hostel Dashboard</span>
+                    </div>
+                    <div class="quick-access-item">
+                        <span>Main Calendar</span>
+                    </div>
+                    <div class="quick-access-item">
+                        <span>Fees Structure</span>
+                    </div>
+                    <div class="quick-access-item">
+                        <span>Mess Menu</span>
+                    </div>
+                    <div class="quick-access-item">
+                        <span>Time Table</span>
+                    </div>
+                    <div class="quick-access-item">
+                        <span>Category C NEP Applications</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer Quote -->
+    <footer class="footer">
+        <p>"Everything is easy when you are busy, but nothing is easy when you are lazy"</p>
+    </footer>
+
+    <script>
+        // Sidebar toggle functionality
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarClose = document.getElementById('sidebarClose');
+        const headerEl = document.querySelector('.header');
+
+        function setHeaderHeightVar() {
+            const h = headerEl ? headerEl.offsetHeight : 120;
+            document.documentElement.style.setProperty('--header-h', h + 'px');
+        }
+
+        // initialize and update on resize
+        setHeaderHeightVar();
+        window.addEventListener('load', setHeaderHeightVar);
+        window.addEventListener('resize', setHeaderHeightVar);
+
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('sidebar-open');
+        });
+
+        sidebarClose.addEventListener('click', () => {
+            sidebar.classList.remove('sidebar-open');
+        });
+
+        // Close sidebar when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target)) {
+                sidebar.classList.remove('sidebar-open');
+            }
+        });
+
+        // Subject dots functionality
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                dots.forEach(d => d.classList.remove('active'));
+                dot.classList.add('active');
+                // Here you could update the percentage circle based on the selected subject
+                const percentageText = document.querySelector('.percentage-text');
+                const percentages = ['85%', '92%', '78%']; // Example percentages for different subjects
+                percentageText.textContent = percentages[index] || '85%';
+            });
+        });
+    </script>
+</body>
+</html>
