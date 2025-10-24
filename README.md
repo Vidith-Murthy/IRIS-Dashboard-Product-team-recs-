@@ -70,3 +70,9 @@ The implementation follows the Figma design specifications exactly:
 
 ## Usage
 Simply open `index.html` in a web browser to view the dashboard. The design is fully responsive and will adapt to different screen sizes while maintaining the visual integrity of the original Figma design.
+
+## Figma 
+Figma link - https://www.figma.com/design/BvoJMI3WN8Shm5vLPsdxLK/IRIS?node-id=0-1&p=f&t=eQOfaVIuDeqRwCUp-0
+
+## Deployment
+It is deployed here https://whimsical-maamoul-f35dc5.netlify.app/
